@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRelLayout"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+
+        android:fontFamily="@font/latobold"
+        android:id="@+id/card_date"
+
+        />
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="129dp"
+        android:clickable="true"
+        android:background="@drawable/custom_border_card"
+        android:id="@+id/cardActivityRelLayout"
+        android:layout_marginBottom="10dp"
+        >
+    <TextView
+
+        android:layout_width="185dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/productsans"
+        android:paddingBottom="10dp"
+        android:id="@+id/card_activities"
+        />
+    </RelativeLayout>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="319dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/habit_checkbox"
+        android:visibility="invisible"
+        android:theme="@style/CardView.Dark"
+        />
+</RelativeLayout>

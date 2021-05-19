@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/createRoutineRelLayout"
+    tools:context=".CreateRoutinePage">
+    <LinearLayout
+        android:layout_width="227dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="178dp"
+        android:id="@+id/colorSelectLiLayout"
+        android:visibility="invisible"
+        android:background="@drawable/custom_border"
+        android:orientation="horizontal">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="28dp"
+            app:backgroundTint="@color/color0"
+            android:layout_gravity="center"
+            android:onClick="routineCloseColorSelectList"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="28dp"
+            app:backgroundTint="@color/color1"
+
+            android:layout_gravity="center"
+            android:layout_marginStart="-15dp"
+            android:onClick="routineCloseColorSelectList"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="28dp"
+            app:backgroundTint="@color/color2"
+
+            android:layout_gravity="center"
+            android:layout_marginLeft="-15dp"
+            android:onClick="routineCloseColorSelectList"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="28dp"
+            app:backgroundTint="@color/color3"
+
+            android:layout_gravity="center"
+            android:layout_marginLeft="-15dp"
+            android:onClick="routineCloseColorSelectList"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="28dp"
+            app:backgroundTint="@color/color4"
+
+            android:layout_gravity="center"
+            android:layout_marginLeft="-15dp"
+            android:onClick="routineCloseColorSelectList"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="28dp"
+            app:backgroundTint="@color/color5"
+
+            android:layout_gravity="center"
+            android:layout_marginLeft="-15dp"
+            android:onClick="routineCloseColorSelectList"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:theme="@style/DatePickerStyle"
+        android:id="@+id/routineTitleEditText"
+        android:hint="@string/title"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:fabCustomSize="28dp"
+        app:backgroundTint="@color/color0"
+        android:id="@+id/routineColorSelectedButton"
+        android:layout_gravity="center"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="340dp"
+
+        />
+    <RelativeLayout
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/routineTimeStartLinearLayout"
+        android:layout_marginTop="100dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Start"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            />
+
+
+
+        <TimePicker
+            android:id="@+id/routineStartTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_marginTop="5dp"
+            android:timePickerMode="spinner"
+            android:theme="@style/DatePickerStyle"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/TimeFinishLinearLayout"
+        android:layout_below="@id/routineTimeStartLinearLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Finish"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+
+            />
+
+        <TimePicker
+            android:id="@+id/routineFinishTimePicker"
+            android:theme="@style/DatePickerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_marginTop="5dp"
+            android:timePickerMode="spinner" />
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/TimeFinishLinearLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:id="@+id/routineCategorySpinner"
+            android:theme="@style/DatePickerStyle"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="40dp"
+            android:theme="@style/DatePickerStyle"
+            android:id="@+id/routinePrioritySpinner"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="20dp"
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="110dp"
+            android:theme="@style/DatePickerStyle"
+            android:gravity="left"
+            android:id="@+id/routineNote"
+            android:hint="Your Note"
+
+            />
+        <Button
+            android:id="@+id/routineDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="204dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="@color/color0"
+            android:enabled="false"
+            android:text="DELETE" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/routineSaveButton"
+            android:backgroundTint="@color/color0"
+            android:layout_marginTop="280dp"
+            android:layout_marginStart="320dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="280dp"
+            android:id="@+id/routineCloseAll"
+            android:text="Close"
+            android:backgroundTint="@color/color0"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

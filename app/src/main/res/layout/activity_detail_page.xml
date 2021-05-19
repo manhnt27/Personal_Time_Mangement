@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/generalRelLayout">
+            <TextView
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/color0"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:fontFamily="@font/latobold"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="manh"
+                android:fontFamily="@font/latosemi"
+                android:textSize="15sp"
+                android:layout_marginStart="157dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latosemi"
+                android:id="@+id/upcoming_event"
+                android:textSize="15sp"
+                android:layout_marginStart="157dp"
+                android:layout_marginTop="45dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latosemi"
+                android:id="@+id/next_event"
+                android:textSize="15sp"
+                android:layout_marginStart="157dp"
+                android:layout_marginTop="70dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upcoming Events"
+                android:fontFamily="@font/latobold"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="45dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latosemi"
+                android:id="@+id/missing_habit"
+                android:textSize="15sp"
+                android:layout_marginStart="157dp"
+                android:layout_marginTop="95dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next Event"
+                android:fontFamily="@font/latobold"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="70dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Missing Habits"
+                android:fontFamily="@font/latobold"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="95dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@+id/generalRelLayout"
+            android:id="@+id/detailBarChart">
+            <TextView
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="11dp"
+                android:background="@color/color0"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habit done times"
+                android:fontFamily="@font/latobold"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                />
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="28dp"
+                android:id="@+id/stackedBarChart"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/detailBarChart"
+            android:layout_width="match_parent"
+
+            android:layout_height="300dp">
+            <TextView
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="11dp"
+
+                android:background="@color/color0"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:fontFamily="@font/latobold"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+                />
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_width="380dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/detail_piechart"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

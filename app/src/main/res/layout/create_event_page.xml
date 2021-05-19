@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/createEventRelLayout"
+        tools:context=".CreateEventPage">
+        <LinearLayout
+            android:layout_width="227dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="178dp"
+            android:id="@+id/colorSelectLiLayout"
+            android:visibility="invisible"
+            android:background="@drawable/custom_border"
+            android:orientation="horizontal">
+             <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:fabCustomSize="28dp"
+                app:backgroundTint="@color/color0"
+                android:layout_gravity="center"
+                android:onClick="eventCloseColorSelectList"
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:fabCustomSize="28dp"
+                app:backgroundTint="@color/color1"
+
+                android:layout_gravity="center"
+                android:layout_marginStart="-15dp"
+                android:onClick="eventCloseColorSelectList"
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:fabCustomSize="28dp"
+                app:backgroundTint="@color/color2"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="-15dp"
+                android:onClick="eventCloseColorSelectList"
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:fabCustomSize="28dp"
+                app:backgroundTint="@color/color3"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="-15dp"
+                android:onClick="eventCloseColorSelectList"
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:fabCustomSize="28dp"
+                app:backgroundTint="@color/color4"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="-15dp"
+                android:onClick="eventCloseColorSelectList"
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:fabCustomSize="28dp"
+                app:backgroundTint="@color/color5"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="-15dp"
+                android:onClick="eventCloseColorSelectList"
+                />
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:theme="@style/DatePickerStyle"
+            android:id="@+id/eventTitleEditText"
+            android:hint="@string/title"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="28dp"
+            app:backgroundTint="@color/color0"
+            android:id="@+id/eventColorSelectedButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="340dp"
+
+            />
+        <RelativeLayout
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:id="@+id/eventTimeStartLinearLayout"
+            android:layout_marginTop="100dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Start"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp"
+                />
+
+            <DatePicker
+                android:id="@+id/eventStartDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:theme="@style/DatePickerStyle"
+
+                />
+
+            <TimePicker
+                android:id="@+id/eventStartTimePicker"
+                android:theme="@style/DatePickerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="230dp"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:timePickerMode="spinner" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:id="@+id/TimeFinishLinearLayout"
+            android:layout_below="@id/eventTimeStartLinearLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Finish"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp"
+
+                />
+
+            <DatePicker
+                android:id="@+id/eventFinishDatePicker"
+                android:theme="@style/DatePickerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:layout_marginStart="10dp"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+
+                />
+
+            <TimePicker
+                android:id="@+id/eventFinishTimePicker"
+                android:theme="@style/DatePickerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="230dp"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:timePickerMode="spinner" />
+
+            >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/TimeFinishLinearLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:id="@+id/eventCategorySpinner"
+                android:theme="@style/DatePickerStyle"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Before"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"
+                />
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="110dp"
+                android:theme="@style/DatePickerStyle"
+                android:gravity="left"
+                android:id="@+id/eventNotificationEditText"
+                android:inputType="number"
+                android:text="30"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/eventNotificationSpinner"
+                android:theme="@style/DatePickerStyle"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="20dp"
+                />
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="110dp"
+                android:theme="@style/DatePickerStyle"
+                android:gravity="left"
+                android:id="@+id/eventNote"
+                android:hint="Your Note"
+
+                />
+
+            <Button
+                android:id="@+id/eventDeleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="204dp"
+                android:layout_marginTop="280dp"
+                android:backgroundTint="@color/color0"
+                android:enabled="false"
+                android:text="DELETE" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/eventSaveButton"
+                android:backgroundTint="@color/color0"
+                android:layout_marginTop="280dp"
+                android:layout_marginStart="320dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="280dp"
+                android:id="@+id/eventCLoseAll"
+                android:text="Close"
+                android:backgroundTint="@color/color0"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

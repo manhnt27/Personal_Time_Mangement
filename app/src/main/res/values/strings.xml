@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TimeMange</string>
+    <string name="click">Click</string>
+    <string name="title">Title</string>
+    <string name="routineCloseColor">routineCloseColorSelectList</string>
+    <string-array name="category">
+        <item>Leisure</item>
+        <item>Health</item>
+        <item>Work</item>
+        <item>Family</item>
+        <item>Education</item>
+        <item>Sport</item>
+        <item>Pastime</item>
+    </string-array>
+
+    <string-array name="priority">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="frequency">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+
+    <string-array name="notification_time">
+        <item>Minute</item>
+        <item>Hour</item>
+        <item>Day</item>
+        <item>Week</item>
+    </string-array>
+
+</resources>
